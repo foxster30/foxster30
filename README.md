@@ -1,16 +1,18 @@
-## Hi there 👋
+---
+layout: default
+---
 
-<!--
-**foxster30/foxster30** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Selamat Datang di Profil Saya 👋
 
-Here are some ideas to get you started:
+Berikut adalah postingan dan proyek terbaru saya:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.date | date: "%d %B %Y" }} - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+---
+[Kembali ke GitHub](https://github.com/foxster30)
